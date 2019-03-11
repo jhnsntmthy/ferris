@@ -4,12 +4,14 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Workout Timer
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <mwc-circular-progress fixed progress="{{dial_progress}}"></mwc-circular-progress>
-  <mwc-button label="Funky" raised icon="clock">Start the Timer</mwc-button>
+<ion-content padding>
+  <mwc-circular-progress fixed progress="{{dial_progress}}" size="300"></mwc-circular-progress>
+  <mwc-chip label="{{totalStr}}" leadingIcon="alarm_on"></mwc-chip>
+  <mwc-button raised outlined (click)="startTimer()">Start the Timer</mwc-button>
+  <mwc-slider discrete markers max="10" value="1.5" step=".25"></mwc-slider>
 </ion-content>
