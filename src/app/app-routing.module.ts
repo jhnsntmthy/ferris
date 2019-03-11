@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   {
+    path: 'ferris',
+    loadChildren: './ferris/ferris.module#FerrisPageModule'
+  },
+  {
     path: 'timer',
     loadChildren: './timer/timer.module#TimerPageModule'
   }

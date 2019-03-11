@@ -24,6 +24,11 @@ export class AppComponent {
       title: 'Timer',
       url: '/timer',
       icon: 'clock'
+    },
+    {
+      title: 'Ferris Wheel',
+      url: '/ferris',
+      icon: 'circle'
     }
   ];
 
