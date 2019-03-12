@@ -7,7 +7,6 @@
 
 
 $num-wheels: 1;
-$num-sides: 10;
 $wheel-height: 10rem;
 
 @mixin keyframes($name) {
@@ -25,34 +24,19 @@ $wheel-height: 10rem;
   } 
 }
 
-
-@function randomColor($format:NULL) {
-  $red: random(256);
-  $green: random(256);
-  $blue: random(256);
-  $opacity: random(100) / 100;
-  @if $format == "hex" {
-    @return rgba($red, $green, $blue, 1);
-  }
-  @else {
-    @return rgba($red, $green, $blue, $opacity);
-  }
-}
-
-
 .wheels {
   box-sizing: border-box;
   position: absolute;
   
-  left: 50%;
+  left: 20%;
   top: 50%;
   display: inline-block;
   padding: 0;
   
   text-align: center;
   
-  width: 50%;
-  height: $wheel-height;
+  width: 10%;
+  height: 20rem;
   
   cursor: -webkit-grab;
   cursor: grab;
@@ -76,13 +60,14 @@ $wheel-height: 10rem;
     & > div {
       box-sizing: border-box;
       position: absolute;
+      overflow: visible;
       display: inline-block;
       width: 100%;
       height: 50%;
-      line-height: $wheel-height/2;
-      text-align: center;
+      line-height: 10rem;
+      text-align: left;
       z-index: 0;
-      background: hsla(15, 0%, 0%, 0);
+      background: hsla(15, 0%, 0%, 0.5);
       border: none;
       outline: 1px solid transparent;
       -ms-backface-visibility: hidden;

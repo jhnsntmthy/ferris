@@ -13,7 +13,7 @@ export const ferris = (wheelSelector, context = document) => {
   const current_coords = freshCoordinates();
   const mass = 1000,
         friction = 1,
-        wheel_ratio = 1000,
+        wheel_ratio = 2500,
         mouse_ratio = 20,
         touch_ratio = 1,
         frame_rate = 60;
@@ -81,7 +81,7 @@ export const ferris = (wheelSelector, context = document) => {
     const items = Array.from(context.querySelector('.wheel').children);
     items.forEach((el:HTMLElement, i) => {
       el.style.cssText = `
-        transform: perspective(500px) rotate3d(1,0,0,${angle(items.length)(i)}deg) translate3d(0,0,162px)
+        transform: perspective(500px) rotate3d(1,0,0,${angle(items.length)(i)}deg) translate3d(0,0,262px)
       `;
     });
   };
