@@ -28,7 +28,7 @@ export class AppComponent {
     {
       title: 'Ferris Wheel',
       url: '/ferris',
-      icon: 'circle'
+      icon: 'list-box'
     }
   ];
 

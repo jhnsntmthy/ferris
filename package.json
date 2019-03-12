@@ -31,8 +31,10 @@
     "@ionic/angular": "^4.1.0",
     "@ionic/pro": "2.0.4",
     "@webcomponents/webcomponentsjs": "^2.2.7",
+    "compass-mixins": "^0.12.10",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "sass-npm": "^1.0.2",
     "zone.js": "~0.8.29"
   },
   "devDependencies": {

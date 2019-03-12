@@ -10,4 +10,12 @@
 </ion-header>
 
 <ion-content>
+    <h2>Drag the wheel below to Scroll</h2>
+    <div class="wheels">
+      <div class="wheel">
+        <div *ngFor="let item of items">
+          {{item.title}}
+        </div>
+      </div>
+    </div>
 </ion-content>
