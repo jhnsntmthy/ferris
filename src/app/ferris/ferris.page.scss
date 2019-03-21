@@ -11,7 +11,7 @@ $wheel-height: 10rem;
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
-    @content; 
+    @content;
   }
   @-moz-keyframes #{$name} {
     @content;
@@ -21,30 +21,30 @@ $wheel-height: 10rem;
   }
   @keyframes #{$name} {
     @content;
-  } 
+  }
 }
 
 .wheels {
   box-sizing: border-box;
   position: absolute;
-  
+
   left: 20%;
   top: 50%;
   display: inline-block;
   padding: 0;
-  
+
   text-align: center;
-  
+
   width: 10%;
   height: 20rem;
-  
+
   cursor: -webkit-grab;
   cursor: grab;
-  
+
   @include user-select(none);
   @include transform(translate(-100%, -50%));
   -ms-transform: translate(-50%, -50%);
-  
+
   & .wheel {
     box-sizing: border-box;
     position: relative;
@@ -53,10 +53,10 @@ $wheel-height: 10rem;
     margin: 0;
     height: 100%;
     width: 100% / $num-wheels;
-    
+
     @include transform-style(preserve-3d);
     @include transform-origin(100%, 25%);
-        
+
     & > div {
       box-sizing: border-box;
       position: absolute;
@@ -72,9 +72,9 @@ $wheel-height: 10rem;
       outline: 1px solid transparent;
       -ms-backface-visibility: hidden;
     }
-    
+
   }
-  
+
 }
 
 @include keyframes(spin) {
@@ -99,9 +99,9 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  
+
   background: #666;
   color: #fff;
-  
+
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
